@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GalaSoft.MvvmLight.Messaging;
+using GalaSoft.MvvmLight.Threading;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -79,9 +81,11 @@ namespace GestComp
                 }
                 // Ensure the current window is active
                 Window.Current.Activate();
+
+                DispatcherHelper.Initialize();                
             }
         }
-
+        
         /// <summary>
         /// Invoked when Navigation to a certain page fails
         /// </summary>
