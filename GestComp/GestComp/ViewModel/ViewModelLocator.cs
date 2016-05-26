@@ -1,13 +1,9 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System.Diagnostics.CodeAnalysis;
+using Microsoft.Practices.ServiceLocation;
+using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
-using Microsoft.Practices.ServiceLocation;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using GestComp.Views;
 
 namespace GestComp.ViewModel
 {
@@ -23,8 +19,8 @@ namespace GestComp.ViewModel
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
 
             var nav = new NavigationService();
-            nav.Configure(HomePageKey, typeof(HomePage));
             nav.Configure(MainPageKey, typeof(MainPage));
+            nav.Configure(HomePageKey, typeof(HomePage));
             nav.Configure(SettingPageKey, typeof(SettingPage));
             SimpleIoc.Default.Register<INavigationService>(() => nav);
 

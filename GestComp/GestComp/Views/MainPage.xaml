@@ -20,6 +20,7 @@
                               Offset="1" />
             </LinearGradientBrush>
         </Grid.Background>
+        
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="40"/>

@@ -20,6 +20,7 @@
                               Offset="1" />
             </LinearGradientBrush>
         </Grid.Background>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="40"/>
@@ -29,9 +30,10 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="40"/>
         </Grid.ColumnDefinitions>
+        
         <TextBlock Foreground="#FFF"
                    Text="Sign out"
-                   Grid.ColumnSpan="2" 
+                   Grid.Column="0" 
                    Grid.Row="1" 
                    FontSize="18"
                    VerticalAlignment="Center"

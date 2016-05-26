@@ -19,13 +19,22 @@ namespace GestComp.ViewModel
         {
             _navigationService = navigationService;
         }
+
         public RelayCommand Back
         {
             get
             {
-                return _navigateCommand
-                       ?? (_navigateCommand = new RelayCommand(
-                           () => _navigationService.NavigateTo(ViewModelLocator.MainPageKey)));
+                return _navigateCommand = new RelayCommand(
+                           () => _navigationService.NavigateTo(ViewModelLocator.MainPageKey));
+            }
+        }
+
+        public RelayCommand Setting
+        {
+            get
+            {
+                return _navigateCommand = new RelayCommand(
+                           () => _navigationService.NavigateTo(ViewModelLocator.SettingPageKey));
             }
         }
     }

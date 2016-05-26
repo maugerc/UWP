@@ -48,9 +48,8 @@ namespace GestComp.ViewModel
         {
             get
             {
-                return _navigateCommand
-                       ?? (_navigateCommand = new RelayCommand(
-                           () => _navigationService.NavigateTo(ViewModelLocator.HomePageKey)));
+                return _navigateCommand = new RelayCommand(
+                           () => _navigationService.NavigateTo(ViewModelLocator.HomePageKey));
             }
         }
 

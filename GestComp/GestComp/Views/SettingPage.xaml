@@ -5,6 +5,8 @@
     xmlns:local="using:GestComp.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"   
     mc:Ignorable="d"
     DataContext="{Binding Setting,Source={StaticResource Locator}}">
 
@@ -19,6 +21,35 @@
             </LinearGradientBrush>
         </Grid.Background>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0"
+              Grid.ColumnSpan="3"
+              Background="#7F000000">
+            <TextBlock Text="Settings"
+                       Foreground="White" 
+                       FontSize="20"
+                       VerticalAlignment="Center"
+                       Margin="10,0,0,0"/>
+        </Grid>
+        <SymbolIcon Grid.Row="2" 
+                    Grid.Column="0"
+                    Foreground="#FFF" 
+                    Symbol="Back">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Tapped">
+                    <core:InvokeCommandAction Command="{Binding Back}" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+        </SymbolIcon>
 
     </Grid>
 </Page>
