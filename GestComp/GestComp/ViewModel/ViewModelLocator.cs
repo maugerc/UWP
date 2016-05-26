@@ -4,6 +4,9 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using GalaSoft.MvvmLight.Views;
 using GestComp.Views;
+using GestComp.Services.Interaces;
+using GestComp.Services;
+using GestComp.Design.Service;
 
 namespace GestComp.ViewModel
 {
@@ -26,14 +29,14 @@ namespace GestComp.ViewModel
 
             SimpleIoc.Default.Register<IDialogService, DialogService>();
 
-            //if (IsInDesignModeStatic)
-            //{
-            //    SimpleIoc.Default.Register<IService, Design.Service>();
-            //}
-            //else
-            //{
-            //    SimpleIoc.Default.Register<IService, Service>();
-            //}
+            if (IsInDesignModeStatic)
+            {
+                SimpleIoc.Default.Register<ISettingService, DesignSettingService>();
+            }
+            else
+            {
+                SimpleIoc.Default.Register<ISettingService, SettingService>();
+            }
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<HomeViewModel>();
