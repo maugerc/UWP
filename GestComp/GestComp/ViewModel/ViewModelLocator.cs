@@ -15,6 +15,7 @@ namespace GestComp.ViewModel
     {
         public const string HomePageKey = "HomePage";
         public const string MainPageKey = "MainPage";
+        public const string SettingPageKey = "SettingPage";
 
 
         static ViewModelLocator()
@@ -24,6 +25,7 @@ namespace GestComp.ViewModel
             var nav = new NavigationService();
             nav.Configure(HomePageKey, typeof(HomePage));
             nav.Configure(MainPageKey, typeof(MainPage));
+            nav.Configure(SettingPageKey, typeof(SettingPage));
             SimpleIoc.Default.Register<INavigationService>(() => nav);
 
             SimpleIoc.Default.Register<IDialogService, DialogService>();
@@ -39,6 +41,7 @@ namespace GestComp.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<HomeViewModel>();
+            SimpleIoc.Default.Register<SettingViewModel>();
         }
 
         [SuppressMessage("Microsoft.Performance",
@@ -55,6 +58,14 @@ namespace GestComp.ViewModel
         public HomeViewModel Home
         {
             get { return ServiceLocator.Current.GetInstance<HomeViewModel>(); }
+        }
+
+        [SuppressMessage("Microsoft.Performance",
+           "CA1822:MarkMembersAsStatic",
+           Justification = "This non-static member is needed for data binding purposes.")]
+        public SettingViewModel Setting
+        {
+            get { return ServiceLocator.Current.GetInstance<SettingViewModel>(); }
         }
     }
 }

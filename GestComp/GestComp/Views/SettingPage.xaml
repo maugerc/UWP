@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="GestComp.Views.SettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GestComp.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Setting,Source={StaticResource Locator}}">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.906,1.164"
+                                 StartPoint="0.244,-0.159">
+                <GradientStop Color="#240058"
+                              Offset="0" />
+                <GradientStop Color="#4D10A4"
+                              Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+    </Grid>
+</Page>
