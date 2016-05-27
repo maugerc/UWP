@@ -107,7 +107,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ISettingService.cs" />
+    <Compile Include="ISkillService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\GestComp.Services.Interaces.rd.xml" />
   </ItemGroup>

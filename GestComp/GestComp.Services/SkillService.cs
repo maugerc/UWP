@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace GestComp.Services
 {
-    public class SettingService : ISettingService
+    public class SkillService : ISkillService
     {
-
+        public bool CreateOrUpdateSkills()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

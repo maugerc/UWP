@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace GestComp.Services.Interaces
 {
-    public interface ISettingService
+    public interface ISkillService
     {
+        bool CreateOrUpdateSkills();
     }
 }

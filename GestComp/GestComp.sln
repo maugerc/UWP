@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestComp.Repositories", "Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestComp.Design.Service", "GestComp.Design.Service\GestComp.Design.Service.csproj", "{C7762893-7E09-496D-8B78-AD7F3F7BE05D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestComp.Entities", "GestComp.Entities\GestComp.Entities.csproj", "{41D619C5-C30F-42C6-9BC6-381CC5131B1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,6 +129,22 @@ Global
 		{C7762893-7E09-496D-8B78-AD7F3F7BE05D}.Release|x64.Build.0 = Release|x64
 		{C7762893-7E09-496D-8B78-AD7F3F7BE05D}.Release|x86.ActiveCfg = Release|x86
 		{C7762893-7E09-496D-8B78-AD7F3F7BE05D}.Release|x86.Build.0 = Release|x86
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|ARM.Build.0 = Debug|ARM
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|x64.ActiveCfg = Debug|x64
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|x64.Build.0 = Debug|x64
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|x86.ActiveCfg = Debug|x86
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Debug|x86.Build.0 = Debug|x86
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|ARM.ActiveCfg = Release|ARM
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|ARM.Build.0 = Release|ARM
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|x64.ActiveCfg = Release|x64
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|x64.Build.0 = Release|x64
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|x86.ActiveCfg = Release|x86
+		{41D619C5-C30F-42C6-9BC6-381CC5131B1C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

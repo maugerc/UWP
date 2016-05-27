@@ -31,11 +31,11 @@ namespace GestComp.ViewModel
 
             if (IsInDesignModeStatic)
             {
-                SimpleIoc.Default.Register<ISettingService, DesignSettingService>();
+                SimpleIoc.Default.Register<ISkillService, DesignSkillService>();
             }
             else
             {
-                SimpleIoc.Default.Register<ISettingService, SettingService>();
+                SimpleIoc.Default.Register<ISkillService, SkillService>();
             }
 
             SimpleIoc.Default.Register<MainViewModel>();
